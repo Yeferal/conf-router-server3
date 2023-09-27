@@ -21,9 +21,9 @@ done
 iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 
 # Guardar las reglas en un archivo
-iptables-save > /etc/iptables/rules.v4
+#iptables-save > /etc/iptables/rules.v4
 
 # Reiniciar el servicio de iptables
-systemctl restart nftables.service
+#systemctl restart nftables.service
 
 echo "Configuración completada."
