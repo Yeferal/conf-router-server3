@@ -24,6 +24,6 @@ iptables -t nat -A POSTROUTING -o enp0s3 -j MASQUERADE
 iptables-save > /etc/iptables/rules.v4
 
 # Reiniciar el servicio de iptables
-systemctl restart iptables
+systemctl restart nftables.service
 
 echo "Configuración completada."
